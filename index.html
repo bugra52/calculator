@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calc">
+    <p id="screen"></p>
+    <button class="btn" onclick="addToVariable('1')">1</button>
+    <button class="btn" onclick="addToVariable('2')">2</button>
+    <button class="btn" onclick="addToVariable('3')">3</button>
+    <button class="btn" onclick="addToVariable('4')">4</button>
+    <button class="btn" onclick="addToVariable('5')">5</button>
+    <button class="btn" onclick="addToVariable('6')">6</button>
+    <button class="btn" onclick="addToVariable('7')">7</button>
+    <button class="btn" onclick="addToVariable('8')">8</button>
+    <button class="btn" onclick="addToVariable('9')">9</button>
+    <button class="btn" onclick="addToVariable('0')">0</button>
+    <button class="btn" onclick="addToOperator('+')">+</button>
+    <button class="btn" onclick="addToOperator('-')">-</button>
+    <button class="btn" onclick="addToOperator('*')">x</button>
+    <button class="btn" onclick="addToOperator('/')">/</button>
+    <button class="btn" onclick="operate(operator, firstNumber, secondNumber)">=</button>
+    <button class="btn" onclick="resetVariable()">C</button>
+</div>
+<script src="script.js">
+
+</script>
+</body>
+</html>
