@@ -9,6 +9,7 @@
 <body>
 <div class="calc">
     <p id="screen"></p>
+    <div class="buttons">
     <button class="btn" onclick="addToVariable('1')">1</button>
     <button class="btn" onclick="addToVariable('2')">2</button>
     <button class="btn" onclick="addToVariable('3')">3</button>
@@ -19,12 +20,14 @@
     <button class="btn" onclick="addToVariable('8')">8</button>
     <button class="btn" onclick="addToVariable('9')">9</button>
     <button class="btn" onclick="addToVariable('0')">0</button>
+    <button class="btn" onclick="addToVariable('.')">.</button>
     <button class="btn" onclick="addToOperator('+')">+</button>
     <button class="btn" onclick="addToOperator('-')">-</button>
     <button class="btn" onclick="addToOperator('*')">x</button>
     <button class="btn" onclick="addToOperator('/')">/</button>
     <button class="btn" onclick="operate(operator, firstNumber, secondNumber)">=</button>
-    <button class="btn" onclick="resetVariable()">C</button>
+    <button class="btn" id="clear" onclick="resetVariable()">C</button>
+</div>
 </div>
 <script src="script.js">
 

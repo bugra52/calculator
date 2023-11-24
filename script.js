@@ -4,7 +4,7 @@ var operator = '';
 var res = '';
 
 function addToVariable(value) {
-
+    
     if (operator === '' && secondNumber === '') {
         firstNumber += value;
         console.log("first number = " + firstNumber)
@@ -98,12 +98,17 @@ function operate(op, a, b) {
             console.log("Ergebnis " + result)
             return result;
         case '/':
+            if(secondNumber !== 0){
             var result = divide(firstNumber, secondNumber) 
             firstNumber = result;
             secondNumber = '';
             document.getElementById('screen').innerText = result;
             console.log("Ergebnis " + result)
-            return result;
+            return result;}
+            else {
+                document.getElementById('screen').innerText = "Error";
+                alert("You cant divide by 0")
+            }
     }
     console.log("ende")
 }
